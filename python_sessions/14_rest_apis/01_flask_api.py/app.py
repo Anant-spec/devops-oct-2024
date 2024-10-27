@@ -40,6 +40,10 @@ import json
 app = Flask(__name__)
 
 
+fruits = {"apple":80, "banana":90}
+@app.get('/')
+def greetings():
+    return "fruit price"
 # create get greeting api and return message and http status code
 # define route at which this API would be called
 
@@ -76,9 +80,7 @@ with open("../data/fruits_data.json", "r+") as json_file:
     json_data = json.load(json_file)
     
     
-@app.get("/fruits")
-def get_fruits():
-    return json_data, 200
+
 
 
 # update ../data/fruits_data.json
@@ -89,6 +91,7 @@ def get_fruits():
 # dump data to same file by with open in w+ mode and using json.dump(json_data, f) method
 
 
+<<<<<<< HEAD
 @app.post("/fruits")
 def create_fruit():
     request_json = request.get_json()
@@ -96,3 +99,6 @@ def create_fruit():
     with open("../data/fruits_data.json","w+") as f:
         json.dump(json_data, f)
     return "Data appended to file", 201
+=======
+
+>>>>>>> 58b30cb (changes)
