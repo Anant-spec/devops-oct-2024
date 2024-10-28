@@ -40,10 +40,7 @@ import json
 app = Flask(__name__)
 
 
-fruits = {"apple":80, "banana":90}
-@app.get('/')
-def greetings():
-    return "fruit price"
+
 # create get greeting api and return message and http status code
 # define route at which this API would be called
 
@@ -56,8 +53,12 @@ def greeting():
 
 
 
+
+
+
 # run python app  with flask run
-# Over browser http://localhost:5000/<path>
+# Over browser 
+
 
 # running flask app  on other port
 # flask run -p 3000
