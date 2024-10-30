@@ -92,7 +92,6 @@ with open("../data/fruits_data.json", "r+") as json_file:
 # dump data to same file by with open in w+ mode and using json.dump(json_data, f) method
 
 
-<<<<<<< HEAD
 @app.post("/fruits")
 def create_fruit():
     request_json = request.get_json()
@@ -100,6 +99,4 @@ def create_fruit():
     with open("../data/fruits_data.json","w+") as f:
         json.dump(json_data, f)
     return "Data appended to file", 201
-=======
 
->>>>>>> 58b30cb (changes)

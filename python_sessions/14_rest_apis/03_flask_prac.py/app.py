@@ -13,14 +13,11 @@ animals = {"Dog":10,"cat":8}
 def get_animal():
     return animals
 
-<<<<<<< HEAD
+@app.route('/animals',methods=['POST'])
+def create_animal():
+    animals=request.get_json()
+    data.append(animals)
+    return jsonify(animals), 201
 
-=======
-@app.get("/animals", method=["POST"])
-
-def add_animals():
-    animals.append(request.get_json())
-    return "", 204
->>>>>>> b409c71 (Add New)
     
 

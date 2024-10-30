@@ -1,1 +1,1 @@
-mongo_conn_string = "mongodb+srv://<username>:<password>@chandra-dev.pcpogvu.mongodb.net/<cluster_name>?retryWrites=true&w=majority"
+mongo_conn_string = "mongodb+srv://Anant_Org:Atlas123@cluster0.gdxv5.mongodb.net/Cluster0?retryWrites=true&w=majority"

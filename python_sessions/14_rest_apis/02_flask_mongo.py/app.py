@@ -53,3 +53,5 @@ def create_fruits():
 def get_fruits():
     fruits_data = fruits_coll.find({},{'_id': False})
     return dumps(fruits_data), 200
+
+
