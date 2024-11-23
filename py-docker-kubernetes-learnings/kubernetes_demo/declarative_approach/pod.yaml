@@ -11,6 +11,7 @@ metadata:
   labels:
     app: second-app
     tier: front-end
+    name: Anant
 spec:
   # container specification. Pod will have container inside
   containers:
